@@ -32,11 +32,11 @@ Para construir Nualia, tomé decisiones técnicas orientadas a crear una **base 
 
 - **Backend como Servicio (BaaS):** Me apoyé completamente en Firebase para gestionar el backend:
 
-    - **Firebase Firestore:** Como **base de datos NoSQL** en tiempo real. Fue un reto interesante estructurar los datos para asegurar la privacidad del usuario, donde cada persona solo puede acceder a su propia información.
+  - **Firebase Firestore:** Como **base de datos NoSQL** en tiempo real. Fue un reto interesante estructurar los datos para asegurar la privacidad del usuario, donde cada persona solo puede acceder a su propia información.
 
-    - **Firebase Authentication:** Para implementar un **flujo de autenticación seguro** (registro, login y recuperación de contraseña).
+  - **Firebase Authentication:** Para implementar un **flujo de autenticación seguro** (registro, login y recuperación de contraseña).
 
-    - **Firebase Storage:** Para el **almacenamiento de imágenes**, como las fotos de perfil y las de las entradas de diario.
+  - **Firebase Storage:** Para el **almacenamiento de imágenes**, como las fotos de perfil y las de las entradas de diario.
 
 ## Librerías Clave:
 
