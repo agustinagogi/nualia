@@ -1,5 +1,7 @@
 # Nualia | My Final Degree Project
 
+![Pantallas de la aplicación nualia](./pantallas-nualia.png)
+
 ## About Me and This Project
 
 Hi! I'm **,Agustina González Ginares**,, a mobile application developer. Nualia is the result of my Final Course Project for the Higher National Diploma in Multiplatform Application Development (**Grado Superior en Desarrollo de Aplicaciones Multiplataforma**).
