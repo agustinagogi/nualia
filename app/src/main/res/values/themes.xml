@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Nualia3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/botones</item>
+        <item name="colorPrimaryVariant">@color/botones</item>
+        <item name="colorOnPrimary">@color/gray_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar y navigation bar colors  -->
+        <item name="android:statusBarColor">@color/botones</item>
+        <item name="android:navigationBarColor">@color/fondo_nualia</item>
+        <!-- Otras configuraciones opcionales -->
+    </style>
+
+    <style name="Theme.Nualia3.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_fondo</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Base application theme para Material 3 (opcional). -->
+    <style name="Base.Theme.Nualia3" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/botones</item>
+        <item name="colorPrimaryVariant">@color/botones</item>
+        <item name="colorOnPrimary">@color/gray_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar y navigation bar colors -->
+        <item name="android:statusBarColor">@color/botones</item>
+        <item name="android:navigationBarColor">@color/fondo_nualia</item>
+        <!-- Otras configuraciones opcionales -->
+    </style>
+</resources>

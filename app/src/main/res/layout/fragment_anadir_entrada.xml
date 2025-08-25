@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fondo_nualia"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvPantallaTitulo"
+            android:text="@string/anadir_entrada"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/texto"/>
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titulo"
+            android:textColorHint="@color/texto"
+            android:background="@drawable/bg_edittext"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Tipo (Task, Note, Event) -->
+        <RadioGroup
+            android:id="@+id/rgTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/rbTarea" android:text="@string/tarea" android:layout_height="match_parent" android:layout_width="wrap_content" android:checked="true" />
+            <RadioButton android:id="@+id/rbNota" android:text="@string/nota" android:layout_height="match_parent" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/rbEvento" android:text="@string/evento" android:layout_height="match_parent" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/rbDiario" android:text="@string/entrada_de_diario" android:layout_height="match_parent" android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Fecha y hora -->
+        <EditText
+            android:id="@+id/campoFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dia_y_hora"
+            android:textColorHint="@color/texto"
+            android:focusable="false"
+            android:background="@drawable/bg_edittext"
+            android:importantForAutofill="no" android:inputType="none"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorEmociones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <ImageView android:id="@+id/emojiFeliz" android:src="@drawable/emocion_feliz" android:layout_width="48dp" android:layout_height="48dp" android:padding="8dp"/>
+            <ImageView android:id="@+id/emojiTriste" android:src="@drawable/emocion_triste" android:layout_width="48dp" android:layout_height="48dp" android:padding="8dp"/>
+            <ImageView android:id="@+id/emojiEnfadado" android:src="@drawable/emocion_enfadado" android:layout_width="48dp" android:layout_height="48dp" android:padding="8dp"/>
+            <ImageView android:id="@+id/emojiEnfermo" android:src="@drawable/emocion_enfermo" android:layout_width="48dp" android:layout_height="48dp" android:padding="8dp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDiario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:contentDescription="@string/imagen_del_diario"
+            android:layout_marginTop="8dp"/>
+
+
+        <!-- Descripción -->
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descripcion"
+            android:background="@drawable/bg_edittext"
+            android:importantForAutofill="no" android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColorHint="@color/texto"
+            android:layout_marginTop="16dp"
+            android:minHeight="100dp"/>
+        <LinearLayout
+            android:id="@+id/layoutNotificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">>
+
+            <TextView
+                android:id="@+id/tvNotificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notificar:"
+                android:textSize="17sp"
+                android:textColor="@color/texto" />
+
+            <ImageView
+                android:id="@+id/iconoNotificar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_notificacion_desactivada"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_imagen"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/botones"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp" />
+
+        <!-- Botón -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_anadir"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/botones"
+            android:textColor="@color/white"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp" />
+
+
+    </LinearLayout>
+</ScrollView>

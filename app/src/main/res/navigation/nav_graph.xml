@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.nualia3.ui.auth.FragmentLogin"
+        android:label="@string/iniciar_sesion">
+        <action
+            android:id="@+id/action_loginFragment_to_fragmentRegistro"
+            app:destination="@id/fragmentRegistro" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentListaNotas"
+        android:name="com.example.nualia3.ui.notas.FragmentListarNota"
+        android:label="@string/mis_notas">
+        <action
+            android:id="@+id/action_fragmentListaNotas_to_fragmentEditNote"
+            app:destination="@id/fragmentEditNote">
+            <argument
+                android:name="notaId"
+                app:argType="string"
+                app:nullable="false" /> <!-- Puedes ponerlo true si permites null -->
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditNote"
+        android:name="com.example.nualia3.ui.notas.FragmentEditarNota"
+        android:label="@string/editar_nota">
+        <argument
+            android:name="entradaId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentRegistro"
+        android:name="com.example.nualia3.ui.auth.FragmentRegistro"
+        android:label="@string/Registro">
+        <action
+            android:id="@+id/action_fragmentRegistro_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/fragmentRegistro"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nualia3.ui.home.FragmentHome"
+        android:label="@string/agenda" />
+
+    <fragment
+        android:id="@+id/anadirEntradaFragment"
+        android:name="com.example.nualia3.ui.entradas.FragmentAnadirEntrada"
+        android:label="@string/anadir_entrada" />
+
+    <fragment
+        android:id="@+id/fragmentListaDiario"
+        android:name="com.example.nualia3.ui.diario.FragmentListaDiario"
+        android:label="@string/mi_diario" />
+
+    <fragment
+        android:id="@+id/fragmentDetalle"
+        android:name="com.example.nualia3.ui.diario.FragmentDetalle">
+        <argument
+            android:name="entradaId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditarTarea"
+        android:name="com.example.nualia3.ui.tareas.FragmentEditarTarea"
+        android:label="@string/editar_tarea">
+        <argument
+            android:name="entradaId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentVistaSemanal"
+        android:name="com.example.nualia3.ui.calendario.FragmentViewSemanal"
+        android:label="@string/vista_semanal" />
+
+    <fragment
+        android:id="@+id/fragmentEstadisticas"
+        android:name="com.example.nualia3.ui.estadisticas.FragmentEstadisticas"
+        android:label="@string/estad_sticas"
+        tools:layout="@layout/fragment_estadisticas" />
+
+    <fragment
+        android:id="@+id/fragmentAjustes"
+        android:name="com.example.nualia3.ui.ajustes.FragmentAjustes"
+        android:label="@string/ajustes"
+        tools:layout="@layout/fragment_ajustes" >
+            <action
+            android:id="@+id/action_fragmentAjustes_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/fragmentAjustes"
+            app:popUpToInclusive="true" >
+            </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditarDiario"
+        android:name="com.example.nualia3.ui.diario.FragmentEditarDiario"
+        android:label="@string/editar_diario">
+        <argument android:name="entradaId" app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditarEvento"
+        android:name="com.example.nualia3.ui.eventos.FragmentEditarEvento"
+        android:label="@string/editar_evento">
+        <argument android:name="entradaId" app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentBuscar"
+        android:name="com.example.nualia3.ui.busqueda.FragmentBuscar"
+        android:label="@string/buscar">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentVistaSemanal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_nualia"
+    android:padding="8dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Cabecera con semana -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/btnSemAnterior"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_atras"
+                android:contentDescription="@string/boton_hacia_atras"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDiasSemana"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <ImageView
+                android:id="@+id/btnSemSig"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_adelante"
+                android:contentDescription="@string/boton_hacia_adelante"/>
+        </LinearLayout>
+
+        <!-- Lista de entradas -->
+        <TextView
+            android:text="@string/entradas_del_dia"
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+            android:textColor="#50504C"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEntradasDelDia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:padding="8dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAnadirEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_anadir"
+            android:contentDescription="@string/boton_flotante"
+            app:backgroundTint="@color/botones"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

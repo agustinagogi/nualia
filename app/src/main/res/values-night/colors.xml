@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+
+    <!-- Colores pastel para tarjetas (ajustados para fondo oscuro) -->
+    <color name="tarea">#406A4B</color>
+    <color name="evento">#8C6C61</color>
+    <color name="reminder">#805E68</color>
+    <color name="diario">#4B6476</color>
+
+    <color name="pastel_peach">#8C6C61</color>
+    <color name="pastel_pink">#805E68</color>
+    <color name="pastel_blue">#4B6476</color>
+    <color name="pastel_green">#406A4B</color>
+
+    <!-- Colores principales adaptados -->
+    <color name="gray_dark">#B0B0B0</color>
+    <color name="fondo_nualia">#1E1A17</color>
+    <color name="botones">#6E9B6B</color>
+    <color name="texto">#EAE6F1</color>
+
+    <!-- Emociones (visibles en fondo oscuro) -->
+    <color name="triste">#708CFF</color>
+    <color name="feliz">#FFEB3B</color>
+    <color name="enfermo">#A5D6A7</color>
+    <color name="enfadado">#EF5350</color>
+
+    <!-- Otros -->
+    <color name="placeholderColor">#2E2B29</color>
+
+    <!-- Fondos de moods -->
+    <color name="mood_happy_bg">#BB86FC</color>
+    <color name="mood_sad_bg">#FFF59D</color>
+    <color name="mood_angry_bg">#C5E1A5</color>
+    <color name="mood_ill_bg">#EF9A9A</color>
+</resources>

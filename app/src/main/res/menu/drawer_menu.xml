@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeFragment" android:title="@string/inicio" android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/fragmentListaDiario" android:title="@string/mi_diario" android:icon="@drawable/ic_diario"/>
+    <item android:id="@+id/fragmentListaNotas" android:title="@string/mis_notas" android:icon="@drawable/ic_nota"/>
+    <item android:id="@+id/fragmentVistaSemanal" android:title="@string/vista_semanal" android:icon="@drawable/ic_semana"/>
+    <item android:id="@+id/fragmentEstadisticas" android:title="@string/estad_sticas" android:icon="@drawable/ic_estadisticas"/>
+    <item android:id="@+id/fragmentAjustes" android:title="@string/ajustes" android:icon="@drawable/ic_configuracion"/>
+
+</menu>

@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fondo_nualia">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editar_titulo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titulo"
+            android:textColorHint="@color/texto"
+            android:textSize="16sp"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editar_descripcion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top|start"
+            android:hint="@string/descripcion"
+            android:textColorHint="@color/texto"
+            android:textSize="16sp"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Fecha -->
+        <EditText
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fecha_y_hora"
+            android:textSize="16sp"
+            android:textColor="@color/texto"
+            android:textColorHint="@color/texto"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:inputType="none"
+            android:importantForAutofill="no" />
+
+
+        <!-- Emociones -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selecciona_emocion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorEmociones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/emojiFeliz"
+                android:src="@drawable/emocion_feliz"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <ImageView
+                android:id="@+id/emojiTriste"
+                android:src="@drawable/emocion_triste"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <ImageView
+                android:id="@+id/emojiEnfadado"
+                android:src="@drawable/emocion_enfadado"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <ImageView
+                android:id="@+id/emojiEnfermo"
+                android:src="@drawable/emocion_enfermo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="4dp" />
+        </LinearLayout>
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/ivDiario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón Cambiar imagen -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cambiar_imagen"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/botones"
+            android:textColor="@color/white"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp" />
+
+        <!-- Botón Guardar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar_cambios"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/botones"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp" />
+
+        <!-- Botón Eliminar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/boton_eliminar"
+            android:backgroundTint="@color/botones"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+</ScrollView>

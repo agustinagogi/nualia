@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_busqueda"
+        android:icon="@drawable/ic_busqueda"
+        android:title="@string/buscar"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_cerrarSesion"
+        android:icon="@drawable/ic_cerrar_sesion"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="always" />
+</menu>

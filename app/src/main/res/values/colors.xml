@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tarea">#D7F4D3</color>
+    <color name="evento">#FFE7DA</color>
+    <color name="reminder">#FFD9E4</color>
+    <color name="diario">#DAF0FF</color>
+    <color name="pastel_peach">#FFE7DA</color>
+    <color name="pastel_pink">#FFD9E4</color>
+    <color name="pastel_blue">#DAF0FF</color>
+    <color name="pastel_green">#D7F4D3</color>
+    <color name="gray_dark">#D5C7B8</color>
+    <color name="fondo_nualia">#f2e3da</color>
+    <color name="botones">#a8c3a7</color>
+    <color name= "texto">#49454f</color>
+    <color name="triste">#5A7DFF</color>
+    <color name="feliz">#FBC02D</color>
+    <color name="enfermo">#81C784</color>
+    <color name="enfadado">#E57373</color>
+    <color name="placeholderColor">#f2e3da</color>
+    <color name="mood_happy_bg">#E29DFF</color> <!-- Amarillo claro -->
+    <color name="mood_sad_bg">#F9E890</color>   <!-- Azul claro -->
+    <color name="mood_angry_bg">#9DFF65</color> <!-- Naranja -->
+    <color name="mood_ill_bg">#DB9D9D</color> <!-- Lila -->
+    <color name="gris_oscuro">#50504C</color>
+
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_nualia"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_taza"
+            android:contentDescription="@string/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crear_cuenta"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/domine_bold"
+            android:paddingTop="16dp"
+            android:textColor="#3E3E3E" />
+
+        <ImageView
+            android:id="@+id/imagenPerfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_usuario"
+            android:contentDescription="@string/imagen_de_perfil"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_imagen"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp"
+            android:backgroundTint="@color/botones"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/nombre_completo"
+            android:textColorHint="@color/texto"
+            android:background="@drawable/edittext_background"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/texto"
+            android:background="@drawable/edittext_background"
+            android:importantForAutofill="no" android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/contrasena"
+            android:textColorHint="@color/texto"
+            android:background="@drawable/edittext_background"
+            android:importantForAutofill="no" android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/crearCuentaButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/crear_cuenta_registro"
+            android:backgroundTint="#A5C3A7"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            app:backgroundTint="@color/botones"/>
+
+        <TextView
+            android:id="@+id/volverLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ya_tiene_cuenta"
+            android:textColor="#7A7A7A"
+            android:textSize="14sp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_nualia"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_taza"
+            android:contentDescription="@string/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nualia"
+            android:textSize="32sp"
+            android:textColor="#50504C"
+            android:fontFamily="@font/domine_bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:textColorHint="@color/texto"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/quicksand_regular"
+                android:background="@drawable/edittext_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Contraseña -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contrasenaInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrasena"
+                android:textColorHint="@color/texto"
+                android:inputType="textPassword"
+                android:fontFamily="@font/quicksand_regular"
+                android:background="@drawable/edittext_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botones -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/registrarse"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksand_bold"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="24dp"
+            app:backgroundTint="@color/botones"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/iniciar_sesion"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksand_bold"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="24dp"
+            app:backgroundTint="@color/botones"/>
+
+
+        <TextView
+            android:id="@+id/textoOlvidoContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contrasena_olvidada"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/quicksand_regular" />
+    </LinearLayout>
+</ScrollView>

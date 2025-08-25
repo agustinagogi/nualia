@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FFFFFF"/> <!-- Color blanco o cambia por el que prefieras -->
+    <stroke
+        android:width="2dp"
+        android:color="#A5C3A7"/> <!-- Color del borde opcional -->
+</shape>
