@@ -28,9 +28,9 @@ To build Nualia, I made technical decisions focused on creating a *clean, scalab
 
 - **Language:** I developed the entire application in **Kotlin**, taking advantage of its modern syntax and null safety to write cleaner, more robust code.
 
-**Navigation:** I used a **Single-Activity Architecture**, managing all screens as **Fragments with the Jetpack Navigation Component.** This allowed me to create a smooth and secure navigation flow between the different parts of the app.
+- **Navigation:** I used a **Single-Activity Architecture**, managing all screens as **Fragments with the Jetpack Navigation Component.** This allowed me to create a smooth and secure navigation flow between the different parts of the app.
 
-**Backend as a Service (BaaS):** I relied completely on Firebase to manage the backend:
+- **Backend as a Service (BaaS):** I relied completely on Firebase to manage the backend:
 
   - **Firebase Firestore:** As a **real-time NoSQL database.** It was an interesting challenge to structure the data to ensure user privacy, where each person can only access their own information.
 
