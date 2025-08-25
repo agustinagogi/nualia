@@ -32,11 +32,11 @@ To build Nualia, I made technical decisions focused on creating a *clean, scalab
 
 **Backend as a Service (BaaS):** I relied completely on Firebase to manage the backend:
 
-    - Firebase Firestore: As a **real-time NoSQL database.** It was an interesting challenge to structure the data to ensure user privacy, where each person can only access their own information.
+  - Firebase Firestore: As a **real-time NoSQL database.** It was an interesting challenge to structure the data to ensure user privacy, where each person can only access their own information.
 
-    - Firebase Authentication: To implement a **secure authentication flow** (registration, login, and password recovery).
+  - Firebase Authentication: To implement a **secure authentication flow** (registration, login, and password recovery).
 
-    - Firebase Storage: For **storing images**, such as profile pictures and those in diary entries.
+  - Firebase Storage: For **storing images**, such as profile pictures and those in diary entries.
 
 ## Key Libraries:
 
