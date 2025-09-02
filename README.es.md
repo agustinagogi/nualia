@@ -2,6 +2,10 @@
 
 ![Pantallas de la aplicación nualia](./pantallas-nualia.png)
 
+[Enlace al vídeo de demostración](http://www.youtube.com/watch?v=otNpM3rv41o&feature=youtu.be)
+
+[Descarga la app aquí](./nualia.apk)
+
 ## Sobre mí y este proyecto
 
 ¡Hola! Soy **,Agustina González Ginares**, desarrolladora de aplicaciones móviles. **Nualia** es el resultado de mi Proyecto de Fin de Curso para el **Grado Superior de Desarrollo de Aplicaciones Multiplataforma.**
