@@ -4,6 +4,8 @@
 
 [Link to the video demonstration](http://www.youtube.com/watch?v=otNpM3rv41o&feature=youtu.be)
 
+[Download the app here](./nualia.apk)
+
 ## About Me and This Project
 
 Hi! I'm **,Agustina González Ginares**,, a mobile application developer. Nualia is the result of my Final Course Project for the Higher National Diploma in Multiplatform Application Development (**Grado Superior en Desarrollo de Aplicaciones Multiplataforma**).
