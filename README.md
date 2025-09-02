@@ -2,7 +2,7 @@
 
 ![Pantallas de la aplicación nualia](./pantallas-nualia.png)
 
-[Link to the video demonstration](www.youtube.com/watch?v=otNpM3rv41o&feature=youtu.be)
+[Link to the video demonstration](http://www.youtube.com/watch?v=otNpM3rv41o&feature=youtu.be)
 
 ## About Me and This Project
 
