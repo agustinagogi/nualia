@@ -63,3 +63,7 @@ Nualia has taught me **how to tackle real-world development problems, to researc
 - **Data Export:** Allowing users to export their entries to PDF, giving them full control over their information.
 
 Thank you for taking the time to review my project. I hope you like it!
+
+## License
+
+[![Nualia license](./LICENSE.png)(https://creativecommons.org/licenses/by-sa/3.0/es)
