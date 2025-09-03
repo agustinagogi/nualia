@@ -66,4 +66,4 @@ Thank you for taking the time to review my project. I hope you like it!
 
 ## License
 
-[![Nualia license](./LICENSE.png)(https://creativecommons.org/licenses/by-sa/3.0/es)
+[![Licencia Nualia](./LICENSE.png)](https://creativecommons.org/licenses/by-sa/3.0/es)
